@@ -1,7 +1,7 @@
 from keveng.node import *
 
-class Scene(Node):
-
+class Scene():                              # not inheriting Node since Scenes don't have a parent
+                                            # also has active childs (for rendering and active scripts idk)
     activeChilds = {}
     childNodes = {}
 
@@ -20,3 +20,9 @@ class Scene(Node):
         
         self.childNodes.append(child)
         child.parentNode = self
+    
+    def killChild(self, child):
+        self.childNodes.append(child)
+        child.parentNode = self             # debating whether to make the parent node the scene itself, since the child node is technically
+                                            # in the highest hierarchy of the scene
+    

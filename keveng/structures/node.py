@@ -1,4 +1,4 @@
-class Node():
+class Node():                           # basic node setup, an object will inherit this (i love inheriting GOD)
 
     childNodes = {}
     parentNode = None

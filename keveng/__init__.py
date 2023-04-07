@@ -1,1 +1,1 @@
-from .scene import *
+from components.scene import *
