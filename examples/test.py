@@ -1,5 +1,9 @@
-import keveng as kvs
+from .. import keveng
 
-fart = kvs.scene.Scene("Level 1")
+# class MyShit(keveng.components):
 
-print(fart.appendChild)
+#     def setup():
+#         pass
+
+#     def update():
+#         pass

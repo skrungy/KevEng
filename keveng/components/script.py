@@ -1,5 +1,7 @@
 class Script:
 
+    active = True
+
     def __init__(self):
         pass
 

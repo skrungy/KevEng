@@ -1,3 +1,2 @@
 # Adding modules
-If you want to add a module, make a new subfolder and add a __init__.py and shit. Make sure to include the module in the
-keveng/__init__.py file so that it can be generally imported.
+If you want to add modules, please fork and then request to merge. I think that's how github works but i dunno.
