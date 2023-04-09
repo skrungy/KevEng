@@ -6,8 +6,8 @@ class App:
     active_scene = None
     exitBool = False
 
-    def __init__():
-        pass
+    # def __init__():
+    #     pass
 
     def setup():
         pass

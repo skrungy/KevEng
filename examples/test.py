@@ -1,9 +1,7 @@
-from .. import keveng
+import sys
+sys.path.append("D:/andrew/Documents/Github/KevEng/")
 
-# class MyShit(keveng.components):
+import keveng
 
-#     def setup():
-#         pass
-
-#     def update():
-#         pass
+app = keveng.App()
+app.run()
