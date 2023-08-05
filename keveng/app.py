@@ -1,26 +1,30 @@
 # this will be behind everything
+import pickle
 
 class App:
 
-    scenes = []
-    active_scene = None
-    exitBool = False
+    active_scene = None # perfectly fine as objects are stored as pointers, so "duping" isnt an issue
+    __exit_bool = False
 
-    # def __init__():
-    #     pass
-
-    def setup():
+    def __setup(): # to be defined
         pass
     
-    def update():
+    def __update(): # to be defined
         pass
+    
+    def load_scene(this, path):
+        with open(path, "rb") as f:
+            this.active_scene = pickle.load(f)
+            f.close()
+        # extra code idk
 
+    # app control stuff
     def exit_app(this):
-        this.exitBool = True
+        this.__exit_bool = True
     
     def run(this):
 
-        this.setup()
-        while (this.exitBool):
-            this.update()
+        this.__setup()
+        while (this.__exit_bool):
+            this.__update()
         

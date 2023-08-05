@@ -1,4 +1,4 @@
-from keveng.node import *
+from .node import *
 
 class Scene():                              # not inheriting Node since Scenes don't have a parent
                                             # also has active childs (for rendering and active scripts idk)

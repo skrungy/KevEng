@@ -20,3 +20,15 @@ submodules that aren't in the same subfolder or is a parent folder)
 
 tl;dr: everything is structured like ass rn, when there is more it will be set up more complicated but more organized
 tl;dr tldr: lazy ass
+
+# USING
+Python is weird when it comes to importing, so downloading this module (or package, i dont know) and using it requires adding the search path.
+This is usually done by doing
+
+import sys
+sys.path.append("path/to/project/")
+
+Future reference if you can't install this with pip (because i cant shoot that far man)
+
+# PREQUISITES
+You need pygame, I'll probably make a setup.py to install it or something idk
